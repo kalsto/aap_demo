@@ -1,0 +1,12 @@
+---
+# vars file for demo
+
+hash_vars:
+  - name: foo
+    value: bar
+  - name: friendly
+    value: face
+  - name: happy
+    value: clam
+
+ocp_hostname: "overwritten_if_surveyed"

@@ -1,0 +1,19 @@
+---
+# tasks file for demo
+
+
+- name: debug some variable
+  ansible.builtin.debug:
+    msg: "This is showing that {{ item.name }} has a value of {{ item.value }}"
+  loop: hash_vars
+
+- name: Different variable
+  ansible.builtin.debug:
+    msg: "This would pull some information from {{ ocp_hostname }} if it could talk to that cluster!"
+
+- name: Collection of variables
+  ansible.builtin.debug:
+    msg: "Here's just a list of variables: {{ collection_list }} "
+  loop: collection
+  loop_control:
+    loop_var: collection_list
