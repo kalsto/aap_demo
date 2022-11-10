@@ -18,11 +18,11 @@
   loop_control:
     loop_var: collection_list
 
-# - name: Run a herve4m to make sure the collection is available
-#   herve4m.quay.quay_organization:
-#     quay_host: "{{ quay_survey_host }}"
-#     quay_username: "{{ quay_survey_user }}"
-#     quay_password: "{{ quay_survey_password }}"
-#     name: test_org
-#     state: absent
-#     email: kstolee@testing.com
+- name: Run a herve4m to make sure the collection is available
+  herve4m.quay.quay_organization:
+    quay_host: "{{ quay_survey_host }}"
+    quay_username: "{{ quay_survey_user }}"
+    quay_password: "{{ quay_survey_password }}"
+    name: test_org
+    state: absent
+    email: kstolee@testing.com
