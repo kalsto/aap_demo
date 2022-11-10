@@ -10,3 +10,8 @@ hash_vars:
     value: clam
 
 ocp_hostname: "overwritten_if_surveyed"
+
+collection:
+  - var1
+  - var2
+  - var3

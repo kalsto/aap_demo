@@ -1,7 +1,8 @@
 ---
 
 - name: showcase AAP stuff
-  hosts: all
+  hosts: localhost
+  connection: local
 
 
   roles:
